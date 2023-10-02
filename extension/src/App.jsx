@@ -1,8 +1,8 @@
 import { useContext, useState } from 'react'
 import { Context } from './Context'
-
 import ScreenRecording from './components/ScreenRecorder'
 import Widget from './components/Widget'
+import Preview from './components/Preview'
 
 function App () {
   const { status } = useContext(Context)
@@ -56,7 +56,7 @@ function App () {
       <div id='video'></div>
 
       {/**Video file to be displayed after recording */}
-      {/* <Preview /> */}
+      <Preview />
     </div>
   )
 }
